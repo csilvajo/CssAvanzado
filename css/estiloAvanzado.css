@@ -381,6 +381,9 @@ body {
   justify-content: center; /*Alineacion horizontal*/
 }
 
+/*
+  Se establece margen para las secciones de formulario y contacto.
+*/
 .contacto__formulario, .contacto__ubicacion{
   margin: 15px;
 }
