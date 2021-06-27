@@ -146,7 +146,7 @@ body {
 */
 .contacto__formulario {
   background-color: rgb(119, 152, 243);
-  background-image: url(/img/Contacto.webp);
+  background-image: url(../img/Contacto.webp);
   background-repeat: no-repeat;
   background-position: 95%;
   padding: 25px;
