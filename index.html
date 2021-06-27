@@ -15,40 +15,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" /><!--Responsividad-->
 
     <link rel="icon" href="img/pc.ico" type="image/x-icon" /><!--Favicon-->
-    <link rel="stylesheet" href="css/style.css" /><!--Estilos-->
+    <link rel="stylesheet" href="css/estiloAvanzado.css" /><!--Estilos-->
   </head>
 
   <body>
     <!--Cabecero-->
-    <header>
-      <img src="img/Banner.png" alt="Logotipo Freelance" title="Logotipo Freelance" />
+    <header class="header">
+      <img src="img/Banner.png" alt="Logotipo Freelance" title="Logotipo Freelance" class="header__img" />
+      <!--Barra de navegacion-->
+      <nav id="inicio" class="header__menu">
+        <p class="menuopciones">
+          <a href="#inicio" class="menuopciones__link">INICIO</a>
+          <a href="#acerca-de-mi" class="menuopciones__link">ACERCA DE MI</a>
+          <a href="#servicios" class="menuopciones__link">SERVICIOS</a>
+          <a href="#contacto" class="menuopciones__link">CONTACTO</a>
+        </p>
+      </nav>
+      <section class="hero">
+        <section class="hero__contenido">
+          <h2 class="herocontenido__titulo">Gestión TI, Soporte Técnico y Desarrollo Web</h2>
+          <a class="menuopciones__link" href="#contacto">Contáctame</a>  
+        </section>                
+    </section>
     </header>
-
-    <!--Barra de navegacion-->
-    <nav id="inicio">
-      <p class="nav-grid">
-        <a href="#inicio" class="boton">Inicio</a>
-        <a href="#acerca-de-mi" class="boton">Acerca de mi</a>
-        <a href="#servicios" class="boton">Servicios</a>
-        <a href="#contacto" class="boton">Contacto</a>
-      </p>
-    </nav>
 
     <!--Contenido principal-->
     <main>
-      <section id="hero-fondo">
-        <section id="hero-contenido">
-          <h2 class="titulo-h2 titulo-h2-blanco">Gestión TI, Soporte Técnico y Desarrollo Web</h2>
-          <a class="boton" href="#contacto">Contactar</a>
-        </section>
-      </section>
-
-      <section id="acerca-de-mi" class="grid">
-        <section id="acerca-de-mi-img">
+      <section id="acerca-de-mi" class="acercademi">
+        <section class="acercademi__imagen">
           <img src="img/Perfil.jpg" alt="Foto de perfil de Carlos Silva" title="Foto de perfil de Carlos Silva"/>
         </section>
 
-        <section id="acerca-de-mi-cont">
+        <section id="acerca-de-mi-cont" class="acercademi__contenido">
           <h2>Acerca de mí</h2>
           <p>Mi nombre completo es Carlos Andrés Silva Jorquera.</p>
           <p>
@@ -113,13 +111,13 @@
 
       <hr />
 
-      <h2 class="titulo-h2">Servicios</h2>
+      <h2>Servicios</h2>
       <p>Te cuento los Servicios que ofresco:</p>      
-      <section id="servicios" class="grid">
+      <section id="servicios" class="servicios">
         
-        <section id="gestion-servicios" class="servicios">
+        <section class="servicios_contenido">
           <h3>Gestión de Servicios TI</h3>
-          <img src="img/ITIL2.jpg" alt="Imágen de la Gestión de Servicios TI con ITIL" title="Gestión de Servicios con ITIL" class="servicios-img" />
+          <img src="img/ITIL2.jpg" alt="Imágen de la Gestión de Servicios TI con ITIL" title="Gestión de Servicios con ITIL" />
           <p>
             <strong
               >Te puedo apoyar en la Operación de tus Servicios TI, gestionando con un rol de Jefe o Supervisor.</strong>
@@ -152,9 +150,9 @@
           </p>
         </section>
 
-        <section id="soporte" class="servicios">
+        <section class="servicios_contenido">
           <h3>Soporte Computacional</h3>
-          <img src="img/SoporteTecnico.jpg" alt="Imágen de una persona efectuando soporte computacional" title="Una persona efectuando soporte" class="servicios-img" />
+          <img src="img/SoporteTecnico.jpg" alt="Imágen de una persona efectuando soporte computacional" title="Una persona efectuando soporte" />
           <p>
             Una de las áreas en las que tengo mayor experiencia es el <strong>Soporte técnico computacional</strong>. EL servicio que ofresco incluye realizar <strong>soporte al hardware y al software</strong> de tu PC o
             Notebook. 
@@ -176,9 +174,9 @@
           </ul>
         </section>
 
-        <section id="gestion-proyectos" class="servicios">
+        <section class="servicios_contenido">
           <h3>Gestión de Proyectos TI</h3>
-          <img src="img/Proyectos.jpeg"  alt="Imágen de un tablero Kanvan" title="Tablero Kanvan" class="servicios-img" />
+          <img src="img/Proyectos.jpeg"  alt="Imágen de un tablero Kanvan" title="Tablero Kanvan" />
           <p>
             Dado que cuento con conocimientos en dos de las metodologías más utilizadas en el área de gestión de proyectos como son PMI y Scrum,
             <strong>te ofresco mi servicio como Gestor de Proyectos TI</strong>, con un rol de Jefe de Proyectos, Analista PMO ó como Scrum Master.
@@ -194,9 +192,9 @@
           </p>
         </section>
 
-        <section id="desarrollo" class="servicios">
+        <section class="servicios_contenido">
           <h3>Desarrollo de Páginas Web</h3>
-          <img src="img/DesarrolloWeb.png" alt="Imágen de una persona escribiendo código de una aplicación" title="Persona escribiendo código" class="servicios-img" />
+          <img src="img/DesarrolloWeb.png" alt="Imágen de una persona escribiendo código de una aplicación" title="Persona escribiendo código" />
           <p>
             Otro de los Servicios que ofresco es el servicio de <strong>Desarrollo de Páginas Web</strong>, el cuál incluye
             desarrollar maquetas y prototipos funcionales e interactivos de interfaces web, a partir de la identificación de tus necesidades,
@@ -213,36 +211,35 @@
 
       <hr />
 
-      <h2 class="titulo-h2">Contacto</h2>
-      <section id="contacto" class="grid">
-        <section id="contacto-form">
+      <h2>Contacto</h2>
+      <section id="contacto" class="contacto">
+        <section class="contacto__formulario">
           <form action="mailto:csilvajo@hotmail.com">
-            <fieldset>
-              <legend><strong>Envíame tus consultas</strong></legend>
-              <p class="contacto-parrafo">Nombre:</p>
-              <input type="text" placeholder="Tu nombre" />
+            <fieldset >
+              <legend class="contacto__formulario--legend"><strong>Envíame tus consultas</strong></legend>
+              <p>Nombre:</p>
+              <input type="text" placeholder="Tu nombre"/>
 
-              <p class="contacto-parrafo">Apellidos:</p>
-              <input type="text" placeholder="Tus apellidos" />
+              <p>Apellidos:</p>
+              <input type="text" placeholder="Tus apellidos"/>
 
-              <p class="contacto-parrafo">Email:</p>
+              <p>Email:</p>
               <input type="email" placeholder="Tu email" />
 
-              <p class="contacto-parrafo">Teléfono:</p>
+              <p>Teléfono:</p>
               <input type="tel" placeholder="Tu teléfono" />
 
-              <p class="contacto-parrafo">Mensaje:</p>
+              <p>Mensaje:</p>
               <textarea placeholder="Indícame lo que necesitas"></textarea>
-              <br />
-              <br />
-              <button type="submit" class="boton" >Enviar</button>
+             
+              <button type="submit" class="boton" >ENVIAR</button>
             </fieldset>
           </form>
         </section>
 
-        <section id="contacto-ubicacion-fondo">
-          <section id="ubicacion-contenido">
-            <ul class="ul-li">
+        <section class="contacto__ubicacion">
+          <section class="ubicacion__contenido">
+            <ul>
               <li><h2>Carlos Carvacho #408, Puente Alto, Santiago.</h2></li>
               <li><h2>+56 955354704</h2></li>
               <li><h2>csilvajo@hotmail.com</h2></li>
@@ -255,17 +252,17 @@
     <hr />
 
     <!--Pie de pagina-->
-    <footer>
-      <nav>
+    <footer class="footer">
+      <nav class="footer__menu">
         <p>
-          <a href="#inicio">Inicio</a> |
-          <a href="#acerca-de-mi">Acerca de mi</a> |
-          <a href="#servicios">Servicios</a> |
-          <a href="#contacto">Contacto</a>
+          <a href="#inicio" class="footermenu__link">INICIO</a> |
+          <a href="#acerca-de-mi" class="footermenu__link">ACERCA DE MI</a> |
+          <a href="#servicios" class="footermenu__link">SERVICIOS</a> |
+          <a href="#contacto" class="footermenu__link">CONTACTO</a>
         </p>
       </nav>
       <p>&copy; 2021 - InceptionOne.cl</p>
-      <p>Versión con Responsividad</p>
+      <p>Versión con Responsividad y CSS Avanzado</p>
     </footer>
   </body>
 </html>
